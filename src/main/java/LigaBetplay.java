@@ -13,7 +13,6 @@ public class LigaBetplay {
         Equipo equipo = new Equipo(nombreEquipo);
         equipos.add(equipo);
         System.out.println("Equipo registrado exitosamente!");
-        scanner.close();
     }
 
     // Método para registrar un partido
@@ -63,7 +62,6 @@ public class LigaBetplay {
         equipoVisitante.actualizarEstadisticas(resultadoVisitante, golesVisitante, golesLocal);
 
         System.out.println("Partido registrado exitosamente!");
-        scanner.close();
     }
 
     // Método para generar reportes
@@ -200,7 +198,7 @@ public class LigaBetplay {
                 default:
                     System.out.println("Opción no válida.");
             }
-            scanner.close();
+
         }
     }
 }
